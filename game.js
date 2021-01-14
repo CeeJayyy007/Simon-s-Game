@@ -50,6 +50,7 @@ function checkAnswer(currentLevel) {
     newPattern = [];
     newButtonCombo = [];
     $("#level-title").text("Game Over! Press A Key to Start");
+    $("h3.counter").text(00);
     started = false;
   }
   }
@@ -58,6 +59,7 @@ function checkAnswer(currentLevel) {
     newButtonCombo = [];
     level++;
     $("#level-title").text("Level " + level);
+    $("h3.counter").text(level);
 
     var randomNumber = (Math.floor(Math.random()*4));
     var btnSelect = colourFlow[randomNumber];
